@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.4 on darwin)" generated="2025-07-28T09:28:04.622042" rpa="false" schemaversion="5">
+<suite id="s1" name="E2E-test" source="/Users/thirawatw/E2E-test">
+<suite id="s1-s1" name="UI" source="/Users/thirawatw/E2E-test/UI">
+<suite id="s1-s1-s1" name="Google" source="/Users/thirawatw/E2E-test/UI/google">
+<suite id="s1-s1-s1-s1" name="View And Add To Card 2" source="/Users/thirawatw/E2E-test/UI/google/view_and_add_to_card_2.robot">
+<test id="s1-s1-s1-s1-t1" name="ค้นหาหนังสือ เพิ่มลง Shopping Cart สำเร็จ" line="8">
+<kw name="เข้าหน้าแรกของที่ https://www.amazon.com">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-28T09:28:04.917381" level="INFO">Opening browser 'edge' to base url 'https://www.amazon.com'.</msg>
+<msg time="2025-07-28T09:28:05.466252" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-07-28T09:28:05.468012" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>url=https://www.amazon.com</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-07-28T09:28:04.915833" elapsed="0.568130">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<status status="FAIL" start="2025-07-28T09:28:04.913212" elapsed="0.571993">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="ใส่คำค้น How Google Tests Software">
+<status status="NOT RUN" start="2025-07-28T09:28:05.485897" elapsed="0.000281"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหาหนังสือ How Google Tests Software">
+<status status="NOT RUN" start="2025-07-28T09:28:05.486462" elapsed="0.000152"/>
+</kw>
+<status status="FAIL" start="2025-07-28T09:28:04.910333" elapsed="0.576628">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" start="2025-07-28T09:28:04.673201" elapsed="0.814973"/>
+</suite>
+<status status="FAIL" start="2025-07-28T09:28:04.668414" elapsed="0.821747"/>
+</suite>
+<status status="FAIL" start="2025-07-28T09:28:04.663039" elapsed="0.829612"/>
+</suite>
+<status status="FAIL" start="2025-07-28T09:28:04.631395" elapsed="0.864370"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="E2E-test" id="s1" pass="0" fail="1" skip="0">E2E-test</stat>
+<stat name="UI" id="s1-s1" pass="0" fail="1" skip="0">E2E-test.UI</stat>
+<stat name="Google" id="s1-s1-s1" pass="0" fail="1" skip="0">E2E-test.UI.Google</stat>
+<stat name="View And Add To Card 2" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">E2E-test.UI.Google.View And Add To Card 2</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-28T09:28:04.907735" level="WARN">Imported resource file '/Users/thirawatw/E2E-test/UI/google/resources.resource' is empty.</msg>
+</errors>
+</robot>

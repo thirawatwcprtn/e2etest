@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.4 on darwin)" generated="2025-07-28T09:35:57.412186" rpa="false" schemaversion="5">
+<suite id="s1" name="View And Add To Card Success" source="/Users/thirawatw/E2E-test/UI/google/view_and_add_to_card_success.robot">
+<test id="s1-t1" name="ค้นหา คำค้น และตรวจสอบผลการค้นหา" line="8">
+<kw name="เข้า Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-28T09:35:57.833115" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com'.</msg>
+<msg time="2025-07-28T09:35:58.385866" level="WARN">The chromedriver version (138.0.7204.94) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.169); currently, chromedriver 138.0.7204.168 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-28T09:35:57.832078" elapsed="4.701082"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-28T09:36:02.534696" elapsed="0.039133"/>
+</kw>
+<status status="PASS" start="2025-07-28T09:35:57.830174" elapsed="4.744144"/>
+</kw>
+<kw name="ใส่คำค้นหา">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-28T09:36:02.577830" level="INFO">Typing text 'ข้าวหมูทอดเฮียวงศ์วงเวียนใหญ่' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${keyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-28T09:36:02.576408" elapsed="0.575104"/>
+</kw>
+<arg>ข้าวหมูทอดเฮียวงศ์วงเวียนใหญ่</arg>
+<status status="PASS" start="2025-07-28T09:36:02.575285" elapsed="0.576702"/>
+</kw>
+<kw name="กดปุ่ม Enter">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-07-28T09:36:03.154460" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-07-28T09:36:03.155211" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-07-28T09:36:03.155572" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-07-28T09:36:03.153578" elapsed="0.021833"/>
+</kw>
+<status status="PASS" start="2025-07-28T09:36:03.152804" elapsed="0.022917"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นพา ต้องพบ ข้าวหมูทอด เฮียวงศ์">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-07-28T09:36:08.298101" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-28T09:36:08.298489" level="FAIL">Text 'ข้าวขาหมูทอด เฮียวงศ์' did not appear in 5 seconds.</msg>
+<arg>ข้าวขาหมูทอด เฮียวงศ์</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-07-28T09:36:03.176609" elapsed="5.128539">Text 'ข้าวขาหมูทอด เฮียวงศ์' did not appear in 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-07-28T09:36:03.176154" elapsed="5.129336">Text 'ข้าวขาหมูทอด เฮียวงศ์' did not appear in 5 seconds.</status>
+</kw>
+<kw name="เข้าดูข้อมูลของหนังสือ How to Win Friends and Influence People">
+<status status="NOT RUN" start="2025-07-28T09:36:08.305882" elapsed="0.000141"/>
+</kw>
+<status status="FAIL" start="2025-07-28T09:35:57.828390" elapsed="10.477975">Text 'ข้าวขาหมูทอด เฮียวงศ์' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-07-28T09:35:57.420252" elapsed="10.887274"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="View And Add To Card Success" id="s1" pass="0" fail="1" skip="0">View And Add To Card Success</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-28T09:35:57.827410" level="WARN">Imported resource file '/Users/thirawatw/E2E-test/UI/google/resources.resource' is empty.</msg>
+<msg time="2025-07-28T09:35:58.385866" level="WARN">The chromedriver version (138.0.7204.94) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (138.0.7204.169); currently, chromedriver 138.0.7204.168 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
