@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Resource    resources.resource
 *** Variables ***
-${URL}   https://www.google.com
+${URL}   https://www.amazon.com
 ${BROWSER}    edge
 *** Test Cases ***
 ค้นหาหนังสือ เพิ่มลง Shopping Cart สำเร็จ 
@@ -29,9 +29,9 @@ ${BROWSER}    edge
 
 *** Keywords ***
 เข้าหน้าแรกของที่ https://www.amazon.com
-    Open Browser    url=https://www.amazon.com    browser=${BROWSER} 
-    # Maximize Browser Window
-    # Wait Until Page Contains Element    id=nav-logo-sprites
+    Open Browser    url=${URL}   browser=${BROWSER} 
+    Maximize Browser Window
+    Wait Until Page Contains Element    id=nav-logo-sprites
 ใส่คำค้น How Google Tests Software
     Input Text    name:field-keywords    text=How Google Tests Software
     Press Keys    None    RETURN

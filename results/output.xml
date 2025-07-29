@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.4 on darwin)" generated="2025-07-28T09:28:04.622042" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.4 on darwin)" generated="2025-07-29T13:05:48.158235" rpa="false" schemaversion="5">
 <suite id="s1" name="E2E-test" source="/Users/thirawatw/E2E-test">
 <suite id="s1-s1" name="UI" source="/Users/thirawatw/E2E-test/UI">
 <suite id="s1-s1-s1" name="Google" source="/Users/thirawatw/E2E-test/UI/google">
@@ -7,35 +7,44 @@
 <test id="s1-s1-s1-s1-t1" name="ค้นหาหนังสือ เพิ่มลง Shopping Cart สำเร็จ" line="8">
 <kw name="เข้าหน้าแรกของที่ https://www.amazon.com">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-28T09:28:04.917381" level="INFO">Opening browser 'edge' to base url 'https://www.amazon.com'.</msg>
-<msg time="2025-07-28T09:28:05.466252" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-07-28T09:28:05.468012" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+<msg time="2025-07-29T13:05:48.333005" level="INFO">Opening browser 'edge' to base url 'https://www.amazon.com'.</msg>
+<msg time="2025-07-29T13:05:48.457900" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-07-29T13:05:48.459198" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
 </msg>
-<arg>url=https://www.amazon.com</arg>
+<arg>url=${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-07-28T09:28:04.915833" elapsed="0.568130">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+<status status="FAIL" start="2025-07-29T13:05:48.332266" elapsed="0.132762">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
 </status>
 </kw>
-<status status="FAIL" start="2025-07-28T09:28:04.913212" elapsed="0.571993">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-07-29T13:05:48.465902" elapsed="0.000262"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=nav-logo-sprites</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-07-29T13:05:48.466344" elapsed="0.000102"/>
+</kw>
+<status status="FAIL" start="2025-07-29T13:05:48.330902" elapsed="0.135774">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
 </status>
 </kw>
 <kw name="ใส่คำค้น How Google Tests Software">
-<status status="NOT RUN" start="2025-07-28T09:28:05.485897" elapsed="0.000281"/>
+<status status="NOT RUN" start="2025-07-29T13:05:48.467271" elapsed="0.000146"/>
 </kw>
 <kw name="ตรวจสอบผลการค้นหาหนังสือ How Google Tests Software">
-<status status="NOT RUN" start="2025-07-28T09:28:05.486462" elapsed="0.000152"/>
+<status status="NOT RUN" start="2025-07-29T13:05:48.467677" elapsed="0.000174"/>
 </kw>
-<status status="FAIL" start="2025-07-28T09:28:04.910333" elapsed="0.576628">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+<status status="FAIL" start="2025-07-29T13:05:48.329373" elapsed="0.138896">NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
 </status>
 </test>
-<status status="FAIL" start="2025-07-28T09:28:04.673201" elapsed="0.814973"/>
+<status status="FAIL" start="2025-07-29T13:05:48.193743" elapsed="0.275797"/>
 </suite>
-<status status="FAIL" start="2025-07-28T09:28:04.668414" elapsed="0.821747"/>
+<status status="FAIL" start="2025-07-29T13:05:48.191482" elapsed="0.279537"/>
 </suite>
-<status status="FAIL" start="2025-07-28T09:28:04.663039" elapsed="0.829612"/>
+<status status="FAIL" start="2025-07-29T13:05:48.186638" elapsed="0.286299"/>
 </suite>
-<status status="FAIL" start="2025-07-28T09:28:04.631395" elapsed="0.864370"/>
+<status status="FAIL" start="2025-07-29T13:05:48.162369" elapsed="0.311841"/>
 </suite>
 <statistics>
 <total>
@@ -51,6 +60,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-07-28T09:28:04.907735" level="WARN">Imported resource file '/Users/thirawatw/E2E-test/UI/google/resources.resource' is empty.</msg>
+<msg time="2025-07-29T13:05:48.327994" level="WARN">Imported resource file '/Users/thirawatw/E2E-test/UI/google/resources.resource' is empty.</msg>
 </errors>
 </robot>
